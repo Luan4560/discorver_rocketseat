@@ -1,18 +1,18 @@
-//function expression
-//function anonymous
+/*
+  Function() constructor
 
-const total = 0;
-//function (parameters)
-const sum = function(number1, number2) {
-  const total = number1 + number2;
-  return total;
-}
+  * expression new
+  * create a new object
+  * this keyword
+ */
 
-let number1 = 32;
-let number2 = 25
-sum(number1, number2); // passing arguments
-
-// console.log(`o número é 1 ${number1}`)
-// console.log(`o número é 2 ${number2}`)
-console.log(`a soma é : ${sum(number1, number2)}`)
-console.log(total)
+ function Person(name, sobrenome) {
+   this.name = name
+   this.sobrenome = sobrenome
+   this.walk = function () {
+     return this.name + ' walking'
+   }
+ }
+ const cassia = new Person("Cássia", "Ranniery")
+ const luan = new Person("Luan", "Nascimento")
+ console.log(luan.walk(), cassia.walk())
