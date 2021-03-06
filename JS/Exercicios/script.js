@@ -88,3 +88,10 @@ function booksOfAuthor(author) {
 }
 
 booksOfAuthor('Augusto Cury')
+
+function sumArray(ar) {
+  const sum = ar.reduce((a,b) => a + b);
+  console.log(sum)
+}
+
+sumArray([1, 2, 5, 6])
